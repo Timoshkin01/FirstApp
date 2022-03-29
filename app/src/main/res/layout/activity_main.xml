@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/coub"
+        android:layout_width="449dp"
+        android:layout_height="425dp"
+        android:rotation="45"
+        android:src="@drawable/ic_coub"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:tint="@color/ligth_green"
+        tools:layout_editor_absoluteX="-19dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <ImageView
+        android:layout_marginVertical="10dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_filin"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        tools:layout_editor_absoluteX="156dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <ImageView
+        android:layout_marginVertical="22dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_down"
+        app:layout_constraintTop_toBottomOf="@+id/coub"
+        app:tint="@color/white"
+        tools:layout_editor_absoluteX="185dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="18dp"
+        android:textColor="@color/white"
+        android:text="log in"
+        android:textAllCaps="true"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="250dp"
+        android:textColor="@color/white"
+        android:text="Trivia"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="190dp"
+        android:text="----------OR----------"
+        android:textColor="@color/gray"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton"
+        style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginHorizontal="24sp"
+        android:layout_marginVertical="240dp"
+        app:iconSize="32dp"
+        app:iconTint="@color/black"
+        app:icon="@drawable/ic_facebook"
+        android:text="Log in with Facebook"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:cornerRadius="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginHorizontal="24sp"
+        android:layout_marginVertical="40dp"
+        android:backgroundTint="@color/blue"
+        android:text="GAME NOW"
+        android:textSize="26sp"
+        app:cornerRadius="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginVertical="135dp"
+        android:background="?android:selectableItemBackground"
+        android:text="Up with Email"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
